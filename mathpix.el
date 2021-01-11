@@ -20,6 +20,7 @@
 (defcustom mathpix-screenshot-method "gnome-screenshot -a -f %s"
   "The tool to capture screenshots."
   :type '(choice
+          (const :tag "grimshot" "grimshot save area %s")
           (const :tag "gnome-screenshot" "gnome-screenshot -a -f %s")
           (const :tag "scrot" "scrot -s %s")
           (const :tag "gm" "gm import %s")
